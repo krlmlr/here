@@ -1,0 +1,277 @@
+# Changelog
+
+## here 1.0.2.9018 (2026-08-08)
+
+### Continuous integration
+
+- Wrap the commit status update into an action.
+
+- Route ccache through one-word compiler wrappers on Unix.
+
+- Name every step and restore the log entry `setup-pandoc` swallows.
+
+## here 1.0.2.9017 (2026-08-06)
+
+### Continuous integration
+
+- Add sharded `revdep2` workflow.
+
+### Uncategorized
+
+- Ci: Harden `workflow_run` workflows against untrusted pull requests
+  ([\#106](https://github.com/r-lib/here/issues/106)).
+
+- Ci: Pin third-party actions to commits and let Renovate keep them
+  pinned ([\#105](https://github.com/r-lib/here/issues/105)).
+
+## here 1.0.2.9016 (2026-08-05)
+
+### Chore
+
+- Auto-update from GitHub Actions
+  ([\#184](https://github.com/r-lib/here/issues/184)).
+
+### Continuous integration
+
+- Remove unused pr-commands workflow.
+
+### Uncategorized
+
+- Ci: Pass workflow context through the environment, not into script
+  text ([\#102](https://github.com/r-lib/here/issues/102)).
+
+## here 1.0.2.9015 (2026-07-28)
+
+- Ci: Apply matrix `env` vars in the workflow, not in custom actions
+  ([\#95](https://github.com/r-lib/here/issues/95)).
+
+- Ci: Link the responsible workflow run in snapshot update PRs
+  ([\#96](https://github.com/r-lib/here/issues/96)).
+
+## here 1.0.2.9014 (2026-07-25)
+
+### Continuous integration
+
+- Lock down `format-suggest` egress (audit → block).
+
+## here 1.0.2.9013 (2026-07-24)
+
+### Bug fixes
+
+#### ci
+
+- Emit empty package matrix when there are no (rev)deps.
+
+### Uncategorized
+
+- Ci: Harden `format-suggest` against `pull_request_target` pwn requests
+  ([\#93](https://github.com/r-lib/here/issues/93)).
+
+## here 1.0.2.9012 (2026-07-22)
+
+### Continuous integration
+
+- Run on Ubuntu 26.04.
+
+- Align workflows with template.
+
+## here 1.0.2.9011 (2026-05-24)
+
+### Continuous integration
+
+- Update ccache-action reference.
+
+- Bump action version.
+
+## here 1.0.2.9010 (2026-05-16)
+
+- Ci: Unify fledge.yaml across cynkratemplate and fledge
+  ([\#86](https://github.com/r-lib/here/issues/86)).
+
+## here 1.0.2.9009 (2026-05-13)
+
+### Chore
+
+- Add ccache to `.gitignore` and `.Rbuildignore`.
+
+### Continuous integration
+
+- Create snapshot update PR against correct branch.
+
+- Add reference to `/apply-patch` workflow in commit message.
+
+- Clarify rationale for not deploying on schedule.
+
+- Only run fledge on pushes to main.
+
+- Tweak fledge workflow and ccache action.
+
+## here 1.0.2.9008 (2026-05-06)
+
+### Continuous integration
+
+- Cosmetics.
+
+- Bump action versions.
+
+- Install clang-format-21.
+
+- Align fledge workflow.
+
+- Harmonize.
+
+## here 1.0.2.9007 (2026-05-04)
+
+### Chore
+
+- Auto-update from GitHub Actions
+  ([\#170](https://github.com/r-lib/here/issues/170)).
+
+## here 1.0.2.9006 (2026-03-12)
+
+### Chore
+
+- Auto-update from GitHub Actions
+  ([\#167](https://github.com/r-lib/here/issues/167)).
+
+## here 1.0.2.9005 (2026-01-14)
+
+### Continuous integration
+
+- Fix comment ([\#165](https://github.com/r-lib/here/issues/165)).
+
+- Tweaks ([\#164](https://github.com/r-lib/here/issues/164)).
+
+- Test all R versions on branches that start with cran-
+  ([\#163](https://github.com/r-lib/here/issues/163)).
+
+## here 1.0.2.9004 (2025-11-17)
+
+### Continuous integration
+
+- Install binaries from r-universe for dev workflow
+  ([\#161](https://github.com/r-lib/here/issues/161)).
+
+## here 1.0.2.9003 (2025-11-12)
+
+### Continuous integration
+
+- Fix reviewdog and add commenting workflow
+  ([\#158](https://github.com/r-lib/here/issues/158)).
+
+## here 1.0.2.9002 (2025-11-10)
+
+### Continuous integration
+
+- Use workflows for fledge
+  ([\#156](https://github.com/r-lib/here/issues/156)).
+
+## here 1.0.2.9001 (2025-11-08)
+
+### Continuous integration
+
+- Sync ([\#154](https://github.com/r-lib/here/issues/154)).
+
+## here 1.0.2.9000 (2025-09-15)
+
+### fledge
+
+- CRAN release v1.0.2
+  ([\#149](https://github.com/r-lib/here/issues/149)).
+
+## here 1.0.2 (2025-09-14)
+
+CRAN release: 2025-09-15
+
+### Features
+
+- Discover VS Code, Quarto and renv projects
+  ([\#128](https://github.com/r-lib/here/issues/128),
+  [\#130](https://github.com/r-lib/here/issues/130)).
+
+### Chore
+
+- Change maintainer e-mail.
+
+### Documentation
+
+- Fix link to “What they forgot” chapter
+  ([@Masterxilo](https://github.com/Masterxilo),
+  [\#101](https://github.com/r-lib/here/issues/101)).
+
+- Fixed “heuristics” typo ([@t-gummer](https://github.com/t-gummer),
+  [\#91](https://github.com/r-lib/here/issues/91)).
+
+## here 1.0.1 (2020-12-13)
+
+CRAN release: 2020-12-13
+
+- Adapt to testthat 3.0.1.
+
+## here 1.0.0 (2020-11-15)
+
+CRAN release: 2020-11-15
+
+### Features
+
+- New [`here::i_am()`](https://here.r-lib.org/dev/reference/i_am.md)
+  offers a new recommended way to declare the project root. Instead of
+  relying on special files or directories that indicate the project
+  root, each script and report now can declare its own location relative
+  to the project root ([\#27](https://github.com/r-lib/here/issues/27)).
+- [`dr_here()`](https://here.r-lib.org/dev/reference/dr_here.md) shows
+  the initial and current working directory
+  ([\#18](https://github.com/r-lib/here/issues/18),
+  [\#55](https://github.com/r-lib/here/issues/55)).
+
+### Documentation
+
+- Improve readme and add “Getting started” vignette
+  ([\#44](https://github.com/r-lib/here/issues/44),
+  [@sharlagelfand](https://github.com/sharlagelfand)). Extend “Getting
+  started” vignette with a detailed description of the behavior and use
+  cases ([\#55](https://github.com/r-lib/here/issues/55)).
+- Update [`?here`](https://here.r-lib.org/dev/reference/here.md) to
+  address conflict with `lubridate::here()`
+  ([\#37](https://github.com/r-lib/here/issues/37),
+  [@nzgwynn](https://github.com/nzgwynn)).
+- New “rmarkdown” vignette
+  ([\#55](https://github.com/r-lib/here/issues/55)).
+- [`set_here()`](https://here.r-lib.org/dev/reference/set_here.md) is
+  superseded in favor of
+  [`here::i_am()`](https://here.r-lib.org/dev/reference/i_am.md)
+  ([\#61](https://github.com/r-lib/here/issues/61)).
+- More explicit documentation for the `...` argument to
+  [`here()`](https://here.r-lib.org/dev/reference/here.md)
+  ([\#7](https://github.com/r-lib/here/issues/7)).
+
+### Internal
+
+- Add testthat tests ([\#57](https://github.com/r-lib/here/issues/57)).
+- Use GitHub Actions for checks
+  ([\#52](https://github.com/r-lib/here/issues/52)).
+- Requires rprojroot \>= 2.0.1.
+- Re-license as MIT ([\#50](https://github.com/r-lib/here/issues/50)).
+- Added Jennifer Bryan as contributor
+  ([\#32](https://github.com/r-lib/here/issues/32)).
+
+## here 0.1 (2017-01-25)
+
+CRAN release: 2017-05-28
+
+Initial CRAN release.
+
+- Main function [`here()`](https://here.r-lib.org/dev/reference/here.md)
+  - Uses a fixed root that contains a `.here` file or can be either an
+    RStudio project, an R package, a `remake` project, a Projectile
+    project, or a VCS repository.
+  - The root is established at package loading time, and shown with a
+    message.
+  - The current working directory is used as a fallback.
+- The [`set_here()`](https://here.r-lib.org/dev/reference/set_here.md)
+  function creates a `.here` file so that a directory is recognized as
+  root by [`here()`](https://here.r-lib.org/dev/reference/here.md).
+- The [`dr_here()`](https://here.r-lib.org/dev/reference/dr_here.md)
+  function explains the reasoning of
+  [`here()`](https://here.r-lib.org/dev/reference/here.md) for the
+  current session.
