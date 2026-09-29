@@ -1,5 +1,19 @@
 # Changelog
 
+## here 1.0.2.9023 (2026-09-29)
+
+### Chore
+
+- Auto-update from GitHub Actions
+  ([\#207](https://github.com/r-lib/here/issues/207)).
+
+### Continuous integration
+
+- Add xml2 for covr, print testthat results
+  ([\#118](https://github.com/r-lib/here/issues/118)).
+
+- Run coverage checks after pkgdown push.
+
 ## here 1.0.2.9022 (2026-09-26)
 
 ### Chore
