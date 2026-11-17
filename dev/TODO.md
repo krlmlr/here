@@ -20,7 +20,7 @@ Disable tic
 
 Disable Travis CI and AppVeyor
 
-[`usethis::use_coverage()`](https://usethis.r-lib.org/reference/use_coverage.html)
+`usethis::use_coverage()`
 
 Consider open pull requests
 
@@ -36,9 +36,9 @@ Use `@examplesIf` where appropriate
 
 Remove `Collate:`
 
-[`usethis::use_lifecycle_badge()`](https://usethis.r-lib.org/reference/badges.html)
+`usethis::use_lifecycle_badge()`
 
-[`usethis::use_lifecycle()`](https://usethis.r-lib.org/reference/use_lifecycle.html)
+`usethis::use_lifecycle()`
 
 Add pkgdown reference index
 
