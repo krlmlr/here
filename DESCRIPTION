@@ -2,21 +2,16 @@ Package: here
 Title: A Simpler Way to Find Your Files
 Version: 1.0.2.9024
 Date: 2026-10-11
-Authors@R: 
-    c(person(given = "Kirill",
-             family = "M\u00fcller",
-             role = c("aut", "cre"),
-             email = "kirill@cynkra.com",
-             comment = c(ORCID = "0000-0002-1416-3412")),
-      person(given = "Jennifer",
-             family = "Bryan",
-             role = "ctb",
-             email = "jenny@posit.co",
-             comment = c(ORCID = "0000-0002-6983-2759")))
-Description: Constructs paths to your project's files.
-    Declare the relative path of a file within your project with 'i_am()'.
-    Use the 'here()' function as a drop-in replacement for 'file.path()',
-    it will always locate the files relative to your project root.
+Authors@R: c(
+    person("Kirill", "Müller", , "kirill@cynkra.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-1416-3412")),
+    person("Jennifer", "Bryan", , "jenny@posit.co", role = "ctb",
+           comment = c(ORCID = "0000-0002-6983-2759"))
+  )
+Description: Constructs paths to your project's files.  Declare the
+    relative path of a file within your project with 'i_am()'.  Use the
+    'here()' function as a drop-in replacement for 'file.path()', it will
+    always locate the files relative to your project root.
 License: MIT + file LICENSE
 URL: https://here.r-lib.org/, https://github.com/r-lib/here
 BugReports: https://github.com/r-lib/here/issues
@@ -37,8 +32,8 @@ Suggests:
     withr
 VignetteBuilder:
     knitr
-Encoding: UTF-8
-Roxygen: list(markdown = TRUE)
-Config/testthat/edition: 3
 Config/Needs/website: tidyverse/tidytemplate
 Config/roxygen2/version: 8.1.1.9000
+Config/testthat/edition: 3
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
