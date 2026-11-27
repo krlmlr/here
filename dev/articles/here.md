@@ -228,11 +228,11 @@ withr::with_dir(tempdir(), {
   print(getwd())
   here::i_am("prepare/penguins.R")
 })
-#> [1] "/tmp/Rtmp2iDDop"
+#> [1] "/tmp/RtmpnS2rBz"
 #> Error:
 #> ! Could not find associated project in working directory or any parent directory.
 #> - Path in project: prepare/penguins.R
-#> - Current working directory: /tmp/Rtmp2iDDop
+#> - Current working directory: /tmp/RtmpnS2rBz
 #> Please open the project associated with this file and try again.
 ```
 
@@ -332,7 +332,7 @@ to create universally unique identifiers:
 ``` r
 
 uuid::UUIDgenerate()
-#> [1] "0ee71f24-c3d9-4ac0-9063-fd83ab20a9aa"
+#> [1] "0cee39e9-607d-4bef-99d9-a93a6a8e4415"
 ```
 
 Ensure that the `uuid` arguments are actually unique across your files!
@@ -367,7 +367,7 @@ writeLines(
   script_path
 )
 fs::dir_tree(temp_project_path)
-#> /tmp/Rtmp2iDDop/file2958aa2c019
+#> /tmp/RtmpnS2rBz/file290a52b26d6b
 #> └── scripts
 #>     └── script.R
 writeLines(readLines(script_path))
@@ -407,7 +407,7 @@ setwd(temp_project_path)
 source(script_path, echo = TRUE)
 #> 
 #> > here::i_am("scripts/script.R")
-#> here() starts at /tmp/Rtmp2iDDop/file2958aa2c019
+#> here() starts at /tmp/RtmpnS2rBz/file290a52b26d6b
 #> 
 #> > print("Hello, world!")
 #> [1] "Hello, world!"
